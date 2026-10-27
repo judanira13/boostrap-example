@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>OPC SOLUCIONES | Productos y Servicios</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #000;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navegación */
+    .site-header {
+      background-color: #111;
+      border-bottom: 1px solid #333;
+    }
+
+    .site-header a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .site-header a:hover {
+      color: #20b8c5;
+    }
+
+    /* Portada */
+    .hero {
+      padding: 90px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #101820, #000);
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: bold;
+    }
+
+    .hero p {
+      color: #ccc;
+      font-size: 1.2rem;
+    }
+
+    /* Sección de productos */
+    .productos {
+      max-width: 1250px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    /* Tarjetas */
+    .producto-card {
+      background-color: #1c2227;
+      border-radius: 15px;
+      padding: 20px;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.3s ease;
+      border: 1px solid #303940;
+    }
+
+    .producto-card:hover {
+      transform: translateY(-7px);
+    }
+
+    /* Imágenes */
+    .producto-imagen {
+      width: 100%;
+      height: 360px;
+      object-fit: contain;
+      background-color: white;
+      border-radius: 10px;
+      display: block;
+      margin: 0 auto 20px;
+    }
+
+    .producto-card h2 {
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .producto-card p {
+      color: #ccc;
+      margin-bottom: 5px;
+    }
+
+    /* Pie de página */
+    footer {
+      background-color: #111;
+      border-top: 1px solid #333;
+      color: #aaa;
+      padding: 35px 20px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #aaa;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+    /* Ajustes para celulares */
+    @media (max-width: 576px) {
+      .producto-imagen {
+        height: 300px;
+      }
+
+      .productos {
+        padding: 30px 15px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- MENÚ -->
+<header class="site-header sticky-top py-3">
+  <nav class="container d-flex flex-wrap justify-content-center gap-4">
+    <a href="carrusel.html">INICIO</a>
+    <a href="productos.html">PRODUCTOS</a>
+    <a href="Caracteristicas.html">CARACTERÍSTICAS</a>
+    <a href="Galeria.html">GALERÍA</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- PORTADA -->
+  <section class="hero" id="inicio">
+    <div class="container">
+      <h1>OPC SOLUCIONES</h1>
+      <p>Todo lo que necesitas a tu alcance</p>
+      <a href="#productos" class="btn btn-outline-info mt-3">
+        Explorar productos
+      </a>
+    </div>
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section class="productos" id="productos">
+
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">NUESTROS PRODUCTOS Y SERVICIOS</h2>
+      <p class="text-secondary">
+        Tecnología, calidad y soluciones para ti.
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- MANTENIMIENTO -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="producto-card">
+          <img src="img/computadores.jpeg"
+               alt="Mantenimiento"
+               class="producto-imagen">
+
+          <h2>MANTENIMIENTO</h2>
+          <p>Tu equipo está en buenas manos.</p>
+        </div>
+      </div>
+
+      <!-- ACCESORIOS -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="producto-card">
+          <img src="img/accesorios.jpeg"
+               alt="Accesorios"
+               class="producto-imagen">
+
+          <h2>ACCESORIOS</h2>
+          <p>Todo lo que necesitas está aquí.</p>
+        </div>
+      </div>
+
+      <!-- CELULARES -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="producto-card">
+          <img src="img/celulares.jpeg"
+               alt="Celulares"
+               class="producto-imagen">
+
+          <h2>CELULARES</h2>
+          <p>El celular que te mereces.</p>
+        </div>
+      </div>
+
+      <!-- COMPUTADORES -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="producto-card">
+          <img src="img/computadores.jpeg"
+               alt="Computadores"
+               class="producto-imagen">
+
+          <h2>COMPUTADORES</h2>
+          <p>Un computador adaptado a tus necesidades.</p>
+        </div>
+      </div>
+
+      <!-- AIRPODS -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="producto-card">
+          <img src="img/airpods.jpeg"
+               alt="AirPods"
+               class="producto-imagen">
+
+          <h2>AIRPODS</h2>
+          <p>Comodidad con el mejor sonido.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- PIE DE PÁGINA -->
+<footer>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-6">
+        <h5>OPC SOLUCIONES</h5>
+        <p>Soluciones tecnológicas a tu alcance.</p>
+      </div>
+
+      <div class="col-md-6">
+        <h5>Sobre nosotros</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Equipo</a></li>
+          <li><a href="#">Ubicación</a></li>
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <hr>
+    <p class="text-center mb-0">
+      &copy; 2026 OPC SOLUCIONES. Todos los derechos reservados.
+    </p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

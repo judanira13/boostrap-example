@@ -1,0 +1,101 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #ffffff !important;         /* Fuerza el texto blanco en toda la página */
+  background-color: #000000 !important; /* Fuerza el fondo negro */
+}
+
+main {
+  background-color: #000000;
+}
+
+/* Forzar que todos los títulos y textos principales sean blancos */
+h1, h2, h3, h4, h5, h6, p, .lead, .featurette-heading {
+  color: #ffffff !important;
+}
+
+/* Ajustar textos secundarios para que se vean claros sobre el fondo negro */
+.text-muted {
+  color: #a0a0a0 !important;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+.carousel {
+  margin-bottom: 4rem;
+  background-color: #000000;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+  background-color: transparent;
+}
+
+.carousel-item {
+  height: 32rem;
+  background-color: #000000;
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  background-color: #000000;
+}
+
+.marketing h2 {
+  font-weight: 400;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+/* Featurettes
+------------------------- */
+.featurette-divider {
+  margin: 5rem 0;
+  border-color: #333333; /* Línea divisoria sutil para modo oscuro */
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
